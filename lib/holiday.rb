@@ -46,8 +46,6 @@ def all_supplies_in_holidays(holiday_hash)
     i = item.join(", ")
     puts "#{s}:"
       puts "#{h}: #{i}"}}
-  end
-  
   # iterate through holiday_hash and print items such that your readout resembles:
   # Winter:
   #   Christmas: Lights, Wreath
