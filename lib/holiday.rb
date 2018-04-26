@@ -43,6 +43,7 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each {|holiday, item|
     holiday = holiday.to_s
     holi = holiday.split
+    holiday
       holi.collect {|word| word.capitalize
       binding.pry
     s = season.capitalize
