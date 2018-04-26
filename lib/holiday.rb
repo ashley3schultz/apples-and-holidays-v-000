@@ -41,7 +41,10 @@ end
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each {|season, holiday|
     holiday.each {|holiday, item|
-    holiday.each {|holi| holi.split
+    holiday.each {|holi| 
+    holi.split
+    holi.capitalize
+    holi.join
     s = season.capitalize
     h = holiday.capitalize
     i = item.join(", ")
