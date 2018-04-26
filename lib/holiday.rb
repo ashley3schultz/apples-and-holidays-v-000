@@ -43,11 +43,11 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each {|s, holiday|
   holiday.each {|h, a|
     holiday = h.to_s.split("_")
-    binding.pry
     holiday.each {|word| hol << word.capitalize}
+    binding.pry
     s = se.capitalize
     h = hol.join(" ")
-    i = it.to_s
+    i = a
     puts "#{s}:"
     puts "  #{h}: #{i}"}}
 end
