@@ -49,7 +49,7 @@ def all_supplies_in_holidays(holiday_hash)
     h = hol.join(" ")
     i = it.to_s
     puts "#{s}:"
-    puts "  #{h}: #{i}"}
+    puts "  #{h}: #{i}"}}
 end
 
 def all_holidays_with_bbq(holiday_hash)
