@@ -39,7 +39,7 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 def all_supplies_in_holidays(holiday_hash)
-  holiday_hash.each {|sk, holiday_hash|
+  holiday_hash.each {|sk, s_hash|
   holiday_hash.each {|hk, item_array|
     h = hk.to_s.split("_")
     h_array = []
