@@ -43,9 +43,9 @@ def all_supplies_in_holidays(holiday_hash)
   holiday.each {|ho, a|
     holi = ho.to_s.split("_")
     arr = []
-    holi.each {|word| arr << word}
+    holi.each {|word| arr << word.capitalize}
     season = s.capitalize.to_s
-    holiday = arr.capitalize.to_s
+    holiday = arr.to_s
     item = a.capitalize
     binding.pry
     puts "#{season}:"
