@@ -46,9 +46,9 @@ def all_supplies_in_holidays(holiday_hash)
     h.each {|h_word| h_array << h_word.capitalize}
     season = sk.capitalize.to_s
     holiday = h_array.join(" ")
-    items = item_array.join(", ")
+    items = item_array.join(", ")}
     puts "#{season}:"
-    puts "  #{holiday}: #{items}"}}
+    puts "  #{holiday}: #{items}"}
 end
 
 def all_holidays_with_bbq(holiday_hash)
