@@ -43,12 +43,12 @@ def all_supplies_in_holidays(holiday_hash)
     holi.each {|holi, item|
     holiday = holi.to_s.split("_")
     hol = []
-    holiday.each {|word| hol << word.capitalize
+    holiday.each {|word| hol << word.capitalize}
     s = season.capitalize
     h = hol.join(" ")
     i = item.join(", ")
     puts "#{s}:"
-    puts "  #{h}: #{i}"}}}
+    puts "  #{h}: #{i}"}}
   # iterate through holiday_hash and print items such that your readout resembles:
   # Winter:
   #   Christmas: Lights, Wreath
