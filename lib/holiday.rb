@@ -39,8 +39,8 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 def all_supplies_in_holidays(holiday_hash)
-  holiday_hash.each {|sk, s_hash|
-  holiday_hash.each {|hk, item_array|
+  holiday_hash.each {|sk, season_hash|
+  season_hash.each {|hk, item_array|
     h = hk.to_s.split("_")
     h_array = []
     h.each {|h_word| h_array << h_word.capitalize}
