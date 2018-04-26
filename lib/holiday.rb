@@ -40,10 +40,12 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
+    holiday.each do |holiday, item|
     s = season.to_s
     h = holiday.to_s
+    i = item.join(", ")
     puts "#{s}:"
-      puts "#{h}:"
+      puts "#{h}: #{i}"
   end
   
   # iterate through holiday_hash and print items such that your readout resembles:
