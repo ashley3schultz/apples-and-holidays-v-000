@@ -46,7 +46,7 @@ def all_supplies_in_holidays(holiday_hash)
     holi.each {|word| arr << word}
     
     season = s.capitalize.to_s
-    holiday = holi.capitalize.join
+    holiday = arr.capitalize.join
     item = a.capitalize
     
     binding.pry
