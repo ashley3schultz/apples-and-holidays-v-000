@@ -44,10 +44,13 @@ def all_supplies_in_holidays(holiday_hash)
     holi = ho.to_s.split("_")
     arr = []
     holi.each {|word| arr << word.capitalize}
-    binding.pry
+    
     season = s.capitalize.to_s
     holiday = holi.join
     item = arr.join(", ")
+    
+    binding.pry
+    
     puts "#{season}:"
     puts "  #{holiday}: #{item}"}}
 end
