@@ -50,7 +50,6 @@ def all_supplies_in_holidays(holiday_hash)
     season = sk.capitalize.to_s
     holiday = h_array.join(" ")
     items = item_array.join(", ")
-          binding.pry
     puts "#{season}:"
     puts "  #{holiday}: #{items}"}}
 end
