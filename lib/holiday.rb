@@ -47,7 +47,7 @@ def all_supplies_in_holidays(holiday_hash)
     season = s.capitalize.to_s
     holiday = arr.capitalize.to_s
     item = a.capitalize
-    
+    binding.pry
     puts "#{season}:"
     puts "  #{holiday}: #{item}"}}
 end
