@@ -41,7 +41,7 @@ end
 
 
 def all_supplies_in_holidays(holiday_hash)
-  holiday_hash.each {|sk, season_hash|
+  holiday_hash.each do |sk, season_hash|
   season_hash.each {|hk, item_array|
     h = hk.to_s.split("_")
     h_array = []
@@ -53,7 +53,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season}:"
     #puts "  #{holiday}: #{items}"
     }
-  }
+  end
 end
 
 
