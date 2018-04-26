@@ -51,7 +51,9 @@ def all_supplies_in_holidays(holiday_hash)
     holiday = h_array.join(" ")
     items = item_array.join(", ")
     puts "#{season}:"
-    puts "  #{holiday}: #{items}"}}
+    #puts "  #{holiday}: #{items}"
+    }
+  }
 end
 
 
