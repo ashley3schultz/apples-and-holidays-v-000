@@ -38,6 +38,8 @@ def all_winter_holiday_supplies(holiday_hash)
   holiday_hash[:winter].values.flatten
 end
 
+
+
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each {|sk, season_hash|
   season_hash.each {|hk, item_array|
@@ -46,8 +48,8 @@ def all_supplies_in_holidays(holiday_hash)
     h.each {|h_word| h_array << h_word.capitalize}
     
     season = sk.capitalize.to_s
-    holiday = h_array.join(" ")
-    items = item_array.join(", ")
+    holiday = h_array.to_s
+    items = item_array.to_s
     puts "#{season}:"
     puts "  #{holiday}: #{items}"}}
 end
