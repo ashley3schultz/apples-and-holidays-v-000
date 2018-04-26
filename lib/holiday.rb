@@ -45,7 +45,7 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each {|word| hol << word.capitalize}
     s = se.capitalize
     h = hol.join(" ")
-    i = it.join(",")
+    i = it.to_s
     puts "#{s}:"
     puts "  #{h}: #{i}"}
   # iterate through holiday_hash and print items such that your readout resembles:
