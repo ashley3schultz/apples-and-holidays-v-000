@@ -58,9 +58,9 @@ end
 
 
 def all_holidays_with_bbq(holiday_hash)
-  holiday_hash.collect {|sk, i_arr|
+  holiday_hash.collect {|sk, s_hash|
           binding.pry
-  i_arr.each {|a| return hk if a.includes? "BBQ"
+  s_hash.each {|hk, i_arr| return hk if i_arr.includes? "BBQ"
 
   }}
   # return an array of holiday names (as symbols) where supply lists
